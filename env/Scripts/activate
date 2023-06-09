@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="E:\Training\Streamlit\todo_app\env"
+VIRTUAL_ENV="E:\Training\Streamlit\Streamlit_todo_app\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

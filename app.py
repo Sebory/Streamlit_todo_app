@@ -1,11 +1,9 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 # from db_fxns import (add_data, view_all_data, view_unique_tasks, 
 #                      get_task, edit_task_data)
 from db_fxns import *
 import plotly.express as px
-import datetime
 
 
 st.title("ToDo App with Streamlit")
@@ -41,7 +39,7 @@ elif choice == "Read":
         task_df = task_df.reset_index()
         st.dataframe(task_df)
 
-        fig = px.pie(task_df, names="Status", values="count")
+        fig = px.pie(task_df, names="Index", values="Status")
         st.plotly_chart(fig)
 
 elif choice == "Update":
