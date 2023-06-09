@@ -39,7 +39,7 @@ elif choice == "Read":
         task_df = task_df.reset_index()
         st.dataframe(task_df)
 
-        fig = px.pie(task_df, names="Index", values="Status")
+        fig = px.pie(task_df, names="index", values="Status")
         st.plotly_chart(fig)
 
 elif choice == "Update":
